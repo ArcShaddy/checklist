@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Checklist</title>
+    <style>
+        main {
+            width: 940px;
+            margin: 0 auto;
+        }
+
+        .titulo {
+            margin: 1% 0 0 10%;
+        }
+
+        form {
+            border-radius: 10px;
+            width: 80%;
+            margin: 0 10% 0 10%;
+            padding: 2% 0;
+        }
+
+        .field {
+            width: 50%;
+            margin: 0 0 10px 20%;
+            border-radius: 8px;
+        }
+
+        .legenda {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .input_radio {
+            display: block;
+            cursor: pointer;
+        }
+
+        .input_text {
+            margin: 10px 0;
+            width: 80%;
+            padding: 10px 25px;
+            border-radius: 5px;
+            border: 0.5px solid;
+        }
+
+        .enviar {
+            margin: 1% 0 0 20%;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            background: rgb(202, 34, 34);
+            color: whitesmoke;
+            width: 25%;
+            padding: 15px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 1s all;
+        }
+
+        .enviar:hover {
+            background: rgb(240, 18, 18);
+            transform: scale(1.2);
+            padding: 15px 15px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                font-size: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body align=""></body>
+<header>
+    <h1 class="titulo">Instalação do Equipamento</h1>
+</header>
+<main>
+    <form action="https://formsubmit.co/cs.250500@gmail.com" method="post">
+        <input type="hidden" name="_captcha" value="false">
+        
+        <fieldset class="field">
+            <legend class="legenda">Energia</legend>
+            <label class="input_radio"><input type="radio" name="Energia" value="110 Volts">110V</label>
+            <label class="input_radio"><input type="radio" name="Energia" value="220 Volts">220V</label>
+        </fieldset>
+
+        <fieldset class="field">
+            <legend class="legenda">Padrão da tomada</legend>
+            <label class="input_radio"><input type="radio" name="Tomada" value="3 Pinos">Novo (3 Pinos)</label>
+            <label class="input_radio"><input type="radio" name="Tomada" value="2 Pinos">Antigo (2 Pinos)</label>
+        </fieldset>
+
+        <fieldset class="field">
+            <legend class="legenda">Conexão com a impressora</legend>
+            <label class="input_radio"><input type="radio" name="Conexao" value="Cabo de rede">Cabo de rede</label>
+            <label class="input_radio"><input type="radio" name="Conexao" value="Cabo usb">Cabo usb</label>
+        </fieldset>
+
+        <fieldset class="field">
+            <legend class="legenda">Sistema Operacional</legend>
+            <label><input type="text" name="Sistema_Operacional" placeholder="windows 7, windows 10, iMac..."
+                    class="input_text"></label>
+        </fieldset>
+
+        <fieldset class="field">
+            <legend class="legenda">Rede</legend>
+            <label class="input_radio"><input type="radio" name="Rede" value="Rede Unica">Rede unica</label>
+            <label class="input_radio"><input type="radio" name="Rede" value="Mais de uma rede">Mais de uma rede</label>
+        </fieldset>
+
+        <fieldset class="field">
+            <legend class="legenda">Proximidade do equipamento com energia/pc/cabo</legend>
+            <label class="input_radio"><input type="radio" name="Proximidade_Equipamento" value="Perto">Perto</label>
+            <label class="input_radio"><input type="radio" name="Proximidade_Equipamento" value="Médio">Médio</label>
+            <label class="input_radio"><input type="radio" name="Proximidade_Equipamento" value="Longe">Longe</label>
+        </fieldset>
+
+        <fieldset class="field">
+            <legend class="legenda">Local da instalação do equipamento</legend>
+            <label><input type="text" name="Departamento" placeholder="Departamento, sala, setor..."
+                    class="input_text"></label>
+        </fieldset>
+
+        <fieldset class="field">
+            <legend class="legenda">Responsável</legend>
+            <label><input type="text" name="Responsavel" placeholder="Quem procurar para instalar o equipamento?"
+                    class="input_text"></label>
+        </fieldset>
+
+        <input type="submit" class="enviar" value="Enviar respostas">
+    </form>
+</main>
+</body>
+
+</html>
